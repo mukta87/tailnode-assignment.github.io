@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar start -->
+        <nav class="sidenav">
+          <div>
+            <a href="#">
+              <img src="assets/images/logo.png" class="nav-logo" alt="" />
+            </a>
+            <button class="toggle-menu"><i class="bi bi-x-lg"></i></button>
+          </div>
+          <div class="sidenav-form">
+            <div class="form-group">
+              <label for="state">State</label>
+              <input
+                type="text"
+                id="state"
+                class="form-control"
+                value="Manipur"
+                placeholder="State"
+              />
+            </div>
+            <div class="form-group">
+              <label for="ac">AC</label>
+              <input
+                type="text"
+                id="ac"
+                class="form-control"
+                value="1 Khundrakpam"
+                placeholder="AC"
+              />
+            </div>
+            <div class="form-group mb-0">
+              <button class="btn btn-primary w-100">Get</button>
+            </div>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active dropdown-toggle collapsed"
+                href="#snap_shot"
+                role="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#snap_shot"
+                aria-expanded="false"
+                aria-controls="snap_shot"
+              >
+                <i class="bi bi-house-door-fill"></i>
+                <span>Snap Shot</span>
+              </a>
+
+              <div
+                id="snap_shot"
+                class="nav-collapse collapse ps-3"
+                data-bs-parent="#mainNav"
+              >
+                <ul>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="nav_name">Snap Shot</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="bi bi-person-fill"></i>
+                <span>Electrical History</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="bi bi-send-fill"></i>
+                <span>AC Analysis</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="bi bi-calendar-event-fill"></i>
+                <span>GI Logs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="bi bi-briefcase-fill"></i>
+                <span>Candidate Panel</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="bi bi-pen-fill"></i>
+                <span>Final Recommendation</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- sidebar end -->
+
+        <!-- page wapper start -->
+        <main id="wrapper">
+          <!-- header start -->
+          <header>
+            <div class="header-links d-md-flex d-none">
+              <a href="#" class="header-link active">AC Dashboard</a>
+              <a href="#" class="header-link">Candidate View</a>
+              <a href="#" class="header-link">State View</a>
+              <a href="#" class="header-link">AC-View</a>
+              <a href="#" class="header-link">PC-View</a>
+            </div>
+            <button class="toggle-menu">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-bell fs-5"></i>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/images/avatar.png"
+                    alt=""
+                  />
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <a class="dropdown-item border-top text-danger" href="#"
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <!-- header end -->
+
+          <!-- breadcrumb start -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Library
+              </li>
+            </ol>
+          </nav>
+          <!-- breadcrumb end -->
+
+          <!-- page title -->
+          <h2 class="page-title">Main Dashboard</h2>
+
+          <!-- page content start -->
+          <div class="page-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>PC. No</small>
+                      <h6>001</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>PC. Name</small>
+                      <h6>Inner Manipur</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>Zone</small>
+                      <h6>Valley</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>District</small>
+                      <h6>Imphal East</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>Seat Category</small>
+                      <h6>Gen</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>MP</small>
+                      <h6>Dr. Rajkumar<br />Ranjan Singh</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6 mb-3">
+                    <div class="card widget">
+                      <small>MLA</small>
+                      <h6>Thokchom<br />Lokeshwar Singh</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-6 mb-3">
+                    <div class="card text-danger widget justify-content-center">
+                      <small class="text-danger"
+                        >Retro Classification BJP</small
+                      >
+                      <h6 class="pb-4">Battleground</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-6 mb-3">
+                    <div class="card text-danger widget justify-content-center">
+                      <small class="text-danger"
+                        >Retro Classification BJP</small
+                      >
+                      <h6 class="pb-4">Battleground</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card p-4">
+                  <img src="assets/images/graph.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-md-4">
+                <h4 class="title">Lok Sabha Winners</h4>
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Candidate Name</th>
+                          <th>Party</th>
+                          <th>Election Year</th>
+                          <th>Votes %</th>
+                          <th>Margin %</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="title">Vidhan Sabha Winners</h4>
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Candidate Name</th>
+                          <th>Party</th>
+                          <th>Election Year</th>
+                          <th>Votes %</th>
+                          <th>Margin %</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong> Thokchom Lokeshwar Singh </strong>
+                          </td>
+                          <td>INC</td>
+                          <td>2017</td>
+                          <td>56.1</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="title">&nbsp;</h4>
+                <div class="card">
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Month</th>
+                          <th>Seat Segmentation</th>
+                          <th>Seat Classification</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>July</td>
+                          <td>BJP Closety Trailing</td>
+                          <td>Can win by poaching incumbent MLA (poachable)</td>
+                        </tr>
+                        <tr>
+                          <td>August</td>
+                          <td>BJP Closety Trailing</td>
+                          <td>Can win by poaching incumbent MLA (poachable)</td>
+                        </tr>
+                        <tr>
+                          <td>September</td>
+                          <td>BJP Closely Trailing</td>
+                          <td>Can win by poaching incumbent MLA (poachable)</td>
+                        </tr>
+                        <tr>
+                          <td>October</td>
+                          <td>BJP Closety Trailing</td>
+                          <td>Can win by poaching incumbent MLA (poachable)</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>November</td>
+                          <td>BJP Closety Trailing</td>
+                          <td>Can win by poaching incumbent MLA (poachable)</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>December</td>
+                          <td>BJP Closety Trailing</td>
+                          <td>Can win by poaching incumbent MLA (poachable)</td>
+                          <td>
+                            <span class="text-primary">13.4</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- page content end -->
+        </main>
+        <!-- page wrapper end -->
+      </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(".toggle-menu").click(function () {
+        $("body").toggleClass("menu-active");
+      });
+    </script>
+  </body>
+</html>
